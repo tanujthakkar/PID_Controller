@@ -1,6 +1,7 @@
 # PID Controller
 
 [![Build Status](https://app.travis-ci.com/tanujthakkar/PID_Controller.svg?branch=master)](https://app.travis-ci.com/tanujthakkar/PID_Controller)
+[![Coverage Status](https://coveralls.io/repos/github/tanujthakkar/PID_Controller/badge.svg)](https://coveralls.io/github/tanujthakkar/PID_Controller)
 
 ---
 
