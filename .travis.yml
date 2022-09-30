@@ -1,6 +1,6 @@
 # We need a decent ubuntu dist
 sudo: required
-dist: trusty
+dist: xenial
 
 # Modern cpp settings from
 #  http://genbattle.bitbucket.org/blog/2016/01/17/c++-travis-ci/
@@ -21,7 +21,7 @@ matrix:
       env: COMPILER=g++-5
 
 before_install:
-  - pip3.6 install --user cpp-coveralls
+  - pip install --user cpp-coveralls
 install:
   - sudo apt-get install -y -qq lcov
 script:
@@ -34,7 +34,7 @@ script:
   - test/cpp-test
 
 after_success:
-  - coveralls --root .. -E ".*external.*" -E ".*CMakeFiles.*" -E ".*test/.*.cpp.*"
+  - coveralls --root .. -E ".*external.*" -E ".*CMakeFiles.*" -E ".*test/.*.cpp.*" -E".*app/main.cpp"
 
 notifications:
   email: false
