@@ -2,8 +2,7 @@
  * @copyright Copyright (c) 2022
  *
  * @file pid.h
- * @author your name (you@domain.com)
- * @brief
+ * @author Tanuj Thakkar (tanuj@umd.edu)
  * @version 0.1
  * @date 2022-09-29
  *
@@ -33,7 +32,7 @@ class PID {
                         // component
 
  public:
-  PID(const double& Kp_, const double& Ki_, const double& Kd_,
+  PID(const double& Kp, const double& Ki, const double& Kd,
       const double& samplingRate);  // Default constructor
   ~PID();                           // Default destructor
 
