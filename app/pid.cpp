@@ -36,6 +36,12 @@ PID::PID(const double& Kp, const double& Ki, const double& Kd,
 }
 
 /**
+ * @brief Destroy the PID::PID object
+ * 
+ */
+PID::~PID() {}
+
+/**
  * @brief Computes new velocity given the actual velocity and target velocity
  * using PID parameters
  *
