@@ -19,7 +19,7 @@
 int main() {
     /*
       TO DO
-      1. Take user input for P, I, and D gain parameters for the PID controller.
+      1. Take user input for P, I, and D gain parameters and sampling rate for the PID controller.
       2. Create a PID instance and call the compute method
     */
     return 0;
