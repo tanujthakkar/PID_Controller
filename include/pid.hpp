@@ -23,13 +23,13 @@
 
 class PID {
  private:
-  double Kp_;           // Propotional gain of the PID controller
-  double Ki_;           // Integral gain of the PID controller
-  double Kd_;           // Derivative gain of the PID controller
-  double samplingRate;  // Sampling rate of the PID controller
-  double prevError;     // Previous error to compute derivative component
-  double totalError;    // Total error till current timestep to compute integral
-                        // component
+  double Kp_;            // Propotional gain of the PID controller
+  double Ki_;            // Integral gain of the PID controller
+  double Kd_;            // Derivative gain of the PID controller
+  double samplingRate_;  // Sampling rate of the PID controller
+  double prevError_;     // Previous error to compute derivative component
+  double totalError_;  // Total error till current timestep to compute integral
+                       // component
 
  public:
   PID(const double& Kp, const double& Ki, const double& Kd,

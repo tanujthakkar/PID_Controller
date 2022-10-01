@@ -32,7 +32,7 @@ PID::PID(const double& Kp, const double& Ki, const double& Kd,
   this->Kp_ = Kp;
   this->Ki_ = Ki;
   this->Kd_ = Kd;
-  this->samplingRate = samplingRate;
+  this->samplingRate_ = samplingRate;
 }
 
 /**
@@ -42,7 +42,7 @@ PID::PID(const double& Kp, const double& Ki, const double& Kd,
 PID::~PID() {}
 
 /**
- * @brief Computes new velocity given the actual velocity and target velocity
+ * @brief Computes new instantaneous velocity given the actual velocity and target velocity
  * using PID parameters
  *
  * @param actualVel Current measured velocity of the system
