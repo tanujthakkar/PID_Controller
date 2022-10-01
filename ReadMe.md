@@ -10,3 +10,17 @@ Part 1 - Programmer: Tanuj Thakkar (tanuj@umd.edu)
 
 ## Overview
 Project on PID Controller based on Test Driven Development (TDD) for ENPM808X at the University of Maryland - College Park.
+
+## Build and Running Instructions
+```
+    git clone https://github.com/tanujthakkar/PID_Controller.git
+    mkdir build && cd build
+    cmake .. 
+    make
+
+    <!-- Run app -->
+    ./app/pid
+
+    <!-- Run tests -->
+    ./test/cpp-test
+```
