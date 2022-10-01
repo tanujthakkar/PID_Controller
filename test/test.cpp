@@ -16,7 +16,7 @@
  * 
  * Case 1:
  * Description: It tests the computeVel method of the PID class. The method is
- * expected to compute the new velocity given the actualy velocity and the 
+ * expected to compute the new instantaneous velocity given the actualy velocity and the 
  * target velocity of the system.
  * Expected Result: PASS
  * 
@@ -34,16 +34,16 @@
  * @brief Construct a new TEST object and implement Test Case 1
  * 
  */
-TEST(TestPID, test_computeVel) {
+TEST(TestPID, testComputeVel) {
   PID pid(1.0, 0.1, 0.3, 1.0);
-  EXPECT_EQ(5.75, pid.computeVel(5, 10));
+  EXPECT_EQ(10.75, pid.computeVel(5, 10));
 }
 
 /**
  * @brief Construct a new TEST object and implement Test Case 2
  * 
  */
-TEST(TestPID, test_getSamplingRate) {
+TEST(TestPID, testGetSamplingRate) {
   PID pid(1.0, 0.3, 0.3, 1.0);
   EXPECT_EQ(1.0, pid.getSamplingRate());
 }
