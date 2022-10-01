@@ -37,7 +37,7 @@ PID::PID(const double& Kp, const double& Ki, const double& Kd,
 
 /**
  * @brief Destroy the PID::PID object
- * 
+ *
  */
 PID::~PID() {}
 
@@ -52,5 +52,15 @@ PID::~PID() {}
  */
 double PID::computeVel(double actualVel, double targetVel) {
   // This method stub returns a constant 0
+  return 0;
+}
+
+/**
+ * @brief Returns the sampling rate of the PID controller
+ *
+ * @return double Sampling rate of the PID controller
+ */
+double PID::getSamplingRate() {
+  // This method stubs returns a constant 0
   return 0;
 }

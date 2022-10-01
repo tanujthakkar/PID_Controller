@@ -39,6 +39,9 @@ class PID {
   double computeVel(
       double actualVel,
       double targetVel);  // Method to compute new velocity using PID controller
+
+  double
+  getSamplingRate();  // Method to get the sampling rate of the PID controller
 };
 
 #endif  // PID_CONTROLLER_INCLUDE_PID_HPP_
