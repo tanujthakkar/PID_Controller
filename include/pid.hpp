@@ -20,7 +20,8 @@
 #define PID_CONTROLLER_INCLUDE_PID_HPP_
 
 #include <iostream>
-
+using std::cin;
+using std::cout;
 class PID {
  private:
   double Kp_;            // Propotional gain of the PID controller
