@@ -2,13 +2,13 @@
  * @copyright Copyright (c) 2022
  *
  * @file main.cpp
- * @author Part1: Tanuj Thakkar(tanuj@umd.edu) Part 2: Sharmitha
- * Ganesan(sganesa3@terpmail.umd.edu) Part 2 Driver: Sharmitha Ganesan,
- * Navigator: Aman Sharma
+ * @author Part1: Tanuj Thakkar(tanuj@umd.edu)
+ * @author Part 2: Sharmitha Ganesan(sganesa3@terpmail.umd.edu) 
+ * Part 2 Navigator : Aman Sharma
  * @version 0.1
  * @date 2022-10-01
  *
- * @brief ENPM808X, Week 4, Test Driven Development
+ * @brief ENPM808X, Week 5, Test Driven Development
  *
  * @section DESCRIPTION
  *
@@ -16,7 +16,6 @@
  *
  */
 #include "pid.hpp"
-
 int main() {
   /*
     TO DO
