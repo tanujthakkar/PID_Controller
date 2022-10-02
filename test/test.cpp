@@ -36,7 +36,7 @@
  */
 TEST(TestPID, testComputeVel) {
   PID pid(1.0, 0.1, 0.3, 1.0);
-  EXPECT_EQ(10.75, pid.computeVel(5, 10));
+  EXPECT_EQ(12.0, pid.computeVel(5, 10));
 }
 
 /**
