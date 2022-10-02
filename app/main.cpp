@@ -4,7 +4,7 @@
  * @file main.cpp
  * @author Part1: Tanuj Thakkar(tanuj@umd.edu)
  * @author Part 2: Sharmitha Ganesan(sganesa3@terpmail.umd.edu) 
- * Part 2 Navigator : Aman Sharma
+ * Part 2 Navigator : Aman Sharma(ahrm007@umd.edu)
  * @version 0.1
  * @date 2022-10-01
  *
