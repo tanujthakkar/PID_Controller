@@ -3,10 +3,11 @@
  *
  * @file pid.cpp
  * @author Tanuj Thakkar (tanuj@umd.edu)
+ * @author Sharmitha Ganesan(sganesa3@terpmail.umd.edu)
  * @version 0.1
  * @date 2022-09-29
  *
- * @brief ENPM808X, Week 4, Test Driven Development
+ * @brief ENPM808X, Week 5, Test Driven Development
  *
  * @section DESCRIPTION
  *
@@ -27,12 +28,14 @@
  * @param Kd Derivative gain of the PID controller
  * @param samplingRate Sampling rate of the PID controller
  */
-PID::PID(const double& Kp, const double& Ki, const double& Kd,
-         const double& samplingRate) {
+PID::PID(const double &Kp, const double &Ki, const double &Kd,
+         const double &samplingRate) {
   this->Kp_ = Kp;
   this->Ki_ = Ki;
   this->Kd_ = Kd;
   this->samplingRate_ = samplingRate;
+  prevError_ = 0;
+  totalError_ = 0;
 }
 
 /**
@@ -53,9 +56,9 @@ PID::~PID() {}
 double PID::computeVel(double actualVel, double targetVel) {
   double computed, difference;
   difference = targetVel - actualVel;
-  computed = actualVel + (Kp_ * difference) +
-             (Ki_ * difference * samplingRate_) +
-             (Kd_ * difference / samplingRate_);
+  totalError_ += difference * samplingRate_;
+  computed = actualVel + (Kp_ * difference) + (Ki_ * totalError_) +
+             (Kd_ * (difference - prevError_) / samplingRate_);
 
   cout << "New Velocity " << computed << "\n";
   return computed;
@@ -70,4 +73,3 @@ double PID::getSamplingRate() {
   // This method stubs returns a constant 0
   return samplingRate_;
 }
-
