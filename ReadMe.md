@@ -1,8 +1,7 @@
 # PID Controller
 
 [![Build Status](https://app.travis-ci.com/sharmithag/PID_Controller.svg?branch=master)](https://app.travis-ci.com/sharmithag/PID_Controller)
-[![Coverage Status](https://coveralls.io/repos/github/tanujthakkar/PID_Controller/badge.svg)](https://coveralls.io/github/tanujthakkar/PID_Controller)
-
+[![Coverage Status](https://coveralls.io/repos/github/sharmithag/PID_Controller/badge.svg?branch=master)](https://coveralls.io/github/sharmithag/PID_Controller?branch=master)
 ---
 
 ## Authors
