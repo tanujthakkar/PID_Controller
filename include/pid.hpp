@@ -3,10 +3,11 @@
  *
  * @file pid.h
  * @author Tanuj Thakkar (tanuj@umd.edu)
+ * @author Sharmitha Ganesan (sganesa3@terpmail.umd.edu)
  * @version 0.1
  * @date 2022-09-29
  *
- * @brief ENPM808X, Week 4, Test Driven Development
+ * @brief ENPM808X, Week 5, Test Driven Development
  *
  * @section DESCRIPTION
  *
