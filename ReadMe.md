@@ -7,7 +7,7 @@
 ## Authors
 Part 1 - Programmer: Tanuj Thakkar (tanuj@umd.edu)
 
-Part 2 - Driver: Sharmitha Ganesan(sganena3@terpmail.umd.edu) , Navigator: Aman Sharma
+Part 2 - Driver: Sharmitha Ganesan(sganena3@terpmail.umd.edu) , Navigator: Aman Kumar Sharma(ahrm007@umd.edu)
 
 ## Overview
 Project on PID Controller based on Test Driven Development (TDD) for ENPM808X at the University of Maryland - College Park.
