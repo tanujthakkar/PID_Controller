@@ -51,8 +51,9 @@ PID::~PID() {}
  * @return double New velocity to reach the desired target velocity
  */
 double PID::computeVel(double actualVel, double targetVel) {
-  // This method stub returns a constant 0
-  return 0;
+  difference = targetVel - actualVel;       
+  computed = Kp * difference + Ki * difference*samplingRate +Kd *difference/samplingRate;
+  return computed;
 }
 
 /**
@@ -62,5 +63,5 @@ double PID::computeVel(double actualVel, double targetVel) {
  */
 double PID::getSamplingRate() {
   // This method stubs returns a constant 0
-  return 0;
+  return samplingRate;
 }
