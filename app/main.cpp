@@ -22,5 +22,12 @@ int main() {
       1. Take user input for P, I, and D gain parameters and sampling rate for the PID controller.
       2. Create a PID instance and call the compute method
     */
-    return 0;
+    cout<<"Enter Kp,Ki,Kd,dt\n";
+    cin>>Kp>>Ki>>Kd>>dt;
+    cout<<"Enter target and actual velocity\n";
+    cin>>target>>actual;
+    PID obj;
+    calculatedVel = obj.computeVel(target,actual);
+        
+    return calculatedVel;
 }
