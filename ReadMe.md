@@ -25,3 +25,12 @@ Project on PID Controller based on Test Driven Development (TDD) for ENPM808X at
     <!-- Run tests -->
     ./test/cpp-test
 ```
+
+## Building for code coverage 
+```
+sudo apt-get install lcov
+cmake -D COVERAGE=ON -D CMAKE_BUILD_TYPE=Debug ../
+make
+make code_coverage
+```
+This generates a index.html page in the build/coverage sub-directory that can be viewed locally in a web browser.
