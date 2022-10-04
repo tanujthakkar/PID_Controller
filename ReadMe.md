@@ -38,9 +38,11 @@ This generates a index.html page in the build/coverage sub-directory that can be
 ## Discussion Notes
 
 Implementation: Matched with original design class.
+
 Additional test case: The sampling rate should be always greater than zero.
 
 To-Do : 
 Implentation of test that gives final average velocity.
+
 Cap the PID velocity with max and min values.
 
