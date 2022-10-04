@@ -3,10 +3,11 @@
  *
  * @file pid.cpp
  * @author Tanuj Thakkar (tanuj@umd.edu)
+ * @author Sharmitha Ganesan(sganesa3@terpmail.umd.edu)
  * @version 0.1
  * @date 2022-09-29
  *
- * @brief ENPM808X, Week 4, Test Driven Development
+ * @brief ENPM808X, Week 5, Test Driven Development
  *
  * @section DESCRIPTION
  *
@@ -17,7 +18,7 @@
  *
  */
 
-#include "pid.hpp"
+#include "../include/pid.hpp"
 
 /**
  * @brief Construct a new PID::PID object
@@ -27,12 +28,14 @@
  * @param Kd Derivative gain of the PID controller
  * @param samplingRate Sampling rate of the PID controller
  */
-PID::PID(const double& Kp, const double& Ki, const double& Kd,
-         const double& samplingRate) {
+PID::PID(const double &Kp, const double &Ki, const double &Kd,
+         const double &samplingRate) {
   this->Kp_ = Kp;
   this->Ki_ = Ki;
   this->Kd_ = Kd;
   this->samplingRate_ = samplingRate;
+  prevError_ = 0;
+  totalError_ = 0;
 }
 
 /**
@@ -42,8 +45,8 @@ PID::PID(const double& Kp, const double& Ki, const double& Kd,
 PID::~PID() {}
 
 /**
- * @brief Computes new instantaneous velocity given the actual velocity and target velocity
- * using PID parameters
+ * @brief Computes new instantaneous velocity given the actual velocity and
+ * target velocity using PID parameters
  *
  * @param actualVel Current measured velocity of the system
  * @param targetVel Target velocity to be achieved by the system
@@ -51,8 +54,14 @@ PID::~PID() {}
  * @return double New velocity to reach the desired target velocity
  */
 double PID::computeVel(double actualVel, double targetVel) {
-  // This method stub returns a constant 0
-  return 0;
+  double computed, difference;
+  difference = targetVel - actualVel;
+  totalError_ += difference * samplingRate_;
+  computed = actualVel + (Kp_ * difference) + (Ki_ * totalError_) +
+             (Kd_ * (difference - prevError_) / samplingRate_);
+
+  cout << "New Velocity " << computed << "\n";
+  return computed;
 }
 
 /**
@@ -62,5 +71,5 @@ double PID::computeVel(double actualVel, double targetVel) {
  */
 double PID::getSamplingRate() {
   // This method stubs returns a constant 0
-  return 0;
+  return samplingRate_;
 }
