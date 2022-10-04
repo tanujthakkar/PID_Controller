@@ -7,7 +7,7 @@
 ## Authors
 Part 1 - Programmer: Tanuj Thakkar (tanuj@umd.edu)
 
-Part 2 - Driver: Sharmitha Ganesan(sganena3@terpmail.umd.edu) , Navigator: Aman Kumar Sharma(ahrm007@umd.edu)
+Part 2 - Driver: Sharmitha Ganesan(sganesa3@terpmail.umd.edu) , Navigator: Aman Kumar Sharma(ahrm007@umd.edu)
 
 ## Overview
 Project on PID Controller based on Test Driven Development (TDD) for ENPM808X at the University of Maryland - College Park.
@@ -34,3 +34,13 @@ make
 make code_coverage
 ```
 This generates a index.html page in the build/coverage sub-directory that can be viewed locally in a web browser.
+
+## Discussion Notes
+
+Implementation: Matched with original design class.
+Additional test case: The sampling rate should be always greater than zero.
+
+To-Do : 
+Implentation of test that gives final average velocity.
+Cap the PID velocity with max and min values.
+
