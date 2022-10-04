@@ -42,8 +42,6 @@ Implementation: Matched with original design class.
 Additional test case: The sampling rate should be always greater than zero.
 
 To-Do : 
-
 Implentation of test that gives final average velocity.
-
 Cap the PID velocity with max and min values.
 
