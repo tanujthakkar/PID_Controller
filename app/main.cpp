@@ -15,7 +15,7 @@
  * Main file for PID Controller implementation based on Test Driven Development
  *
  */
-#include "pid.hpp"
+#include "../include/pid.hpp"
 int main() {
   /*
     TO DO
