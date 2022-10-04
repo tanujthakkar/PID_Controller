@@ -27,7 +27,7 @@
  */
 
 #include <gtest/gtest.h>
-#include "pid.hpp"
+#include "../include/pid.hpp"
 
 
 /**
